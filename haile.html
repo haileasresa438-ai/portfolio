@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Haile Asresa | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="photo">
+        <img src="/image/img.jpg" alt="My photo">
+      </div>
+      <div>
+        <h1>Haile Asresa</h1>
+        <p class="lead">Front-end Developer · UI Enthusiast · Open to projects</p>
+      </div>
+      <button id="themeToggle">🌙</button>
+    </header>
+
+    <div class="grid">
+      <section class="card">
+        <h2>About me</h2>
+        <p class="about">
+          I build clean, accessible interfaces with a focus on performance and user experience. 
+          I love turning ideas into delightful products using HTML, CSS and JavaScript.
+        </p>
+
+        <h3>Skills</h3>
+        <div class="skills">
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">JavaScript</span>
+       
+        </div>
+
+        <h3>Featured Project</h3>
+        <div class="project">
+          <img src="/image2/image 1.jpg" alt="Cinema Booking System">
+          <p><strong>Cinema Booking Management System</strong><br>Manage movie bookings, users, and ticket sales efficiently.</p>
+          <a href="http://localhost/phpmyadmin/index.php?route=/database/structure&db=cinema" class="project-btn" target="_blank">View Project</a>
+        </div>
+      </section>
+
+      <aside class="card">
+        <h3>Contact</h3>
+        <div class="contact">
+          <a href="mailto:haileasresa@21gmail.com">📧 Email</a>
+          <a href="https://t.me/haila2119">💬 Telegram</a>
+        </div>
+
+        <h3>Quick Links</h3>
+        <ul class="links">
+          <li>Projects</li>
+          <li>Resume</li>
+        </ul>
+      </aside>
+    </div>
+
+    <footer>
+      Designed with ♥ — Haile Asresa | 
+    </footer>
+  </div>
+
+  <script>
+    const toggle = document.getElementById('themeToggle');
+    toggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark');
+      toggle.textContent = document.body.classList.contains('dark') ? '☀️' : '🌙';
+    });
+  </script>
+</body>
+</html>
